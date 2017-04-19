@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0C07C2C91E525E0F00A921A8 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07C2BF1E525E0F00A921A8 /* PGNParser.framework */; };
-		0C07C2CE1E525E0F00A921A8 /* PGNParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C07C2CD1E525E0F00A921A8 /* PGNParserTests.swift */; };
 		0C07C2D01E525E0F00A921A8 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C07C2E21E52614D00A921A8 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07C2DF1E5260F200A921A8 /* ParserCombinator.framework */; };
+		0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
+		0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
+		0C16575D1E9D826300C152C5 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575C1E9D826300C152C5 /* DraughtsMoveTests.swift */; };
+		0C37DC661E56200800591CA1 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5764F1E55064C0045BF4A /* Currier.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +24,104 @@
 			remoteGlobalIDString = 0C07C2BE1E525E0F00A921A8;
 			remoteInfo = PGNParser;
 		};
+		0C07C2DE1E5260F200A921A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C07C29B1E5251BA00A921A8;
+			remoteInfo = ParserCombinator;
+		};
+		0C07C2E01E5260F200A921A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C07C2A41E5251BB00A921A8;
+			remoteInfo = ParserCombinatorTests;
+		};
+		0C16573F1E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C6F5CA71E6813FB0071F2B4;
+			remoteInfo = "Currier-watchOS";
+		};
+		0C1657411E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C6F5CB51E6817B00071F2B4;
+			remoteInfo = "Currier-macOS";
+		};
+		0C1657431E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C1E61431E69EA640034F4A3;
+			remoteInfo = "Currier-tvOS";
+		};
+		0C1657451E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C6F5CC21E68187A0071F2B4;
+			remoteInfo = "CurrierTests-macOS";
+		};
+		0C1657471E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C1E614F1E69EACD0034F4A3;
+			remoteInfo = "CurrierTests-tvOS";
+		};
+		0C1657501E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C26E0FF1E7BDAEC00779771;
+			remoteInfo = "ParserCombinator-watchOS";
+		};
+		0C1657521E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C26E09C1E7BD82900779771;
+			remoteInfo = "ParserCombinator-macOS";
+		};
+		0C1657541E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C26E0B81E7BD84C00779771;
+			remoteInfo = "ParserCombinator-tvOS";
+		};
+		0C1657561E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C26E0A41E7BD82900779771;
+			remoteInfo = "ParserCombinatorTests-macOS";
+		};
+		0C1657581E9D655300C152C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C26E0C01E7BD84D00779771;
+			remoteInfo = "ParserCombinatorTests-tvOS";
+		};
+		0CC5764E1E55064C0045BF4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C0A06A71E52FD660098FC41;
+			remoteInfo = Currier;
+		};
+		0CC576501E55064C0045BF4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C0A06B01E52FD660098FC41;
+			remoteInfo = CurrierTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +129,12 @@
 		0C07C2C21E525E0F00A921A8 /* PGNParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGNParser.h; sourceTree = "<group>"; };
 		0C07C2C31E525E0F00A921A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C07C2C81E525E0F00A921A8 /* PGNParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGNParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C07C2CD1E525E0F00A921A8 /* PGNParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGNParserTests.swift; sourceTree = "<group>"; };
 		0C07C2CF1E525E0F00A921A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParserCombinator.xcodeproj; path = ../ParserCombinator/ParserCombinator.xcodeproj; sourceTree = "<group>"; };
+		0C1657361E9D655300C152C5 /* DraughtsMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMove.swift; sourceTree = "<group>"; };
+		0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsNotationParser.swift; sourceTree = "<group>"; };
+		0C16575C1E9D826300C152C5 /* DraughtsMoveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMoveTests.swift; sourceTree = "<group>"; };
+		0CC576491E55064C0045BF4A /* Currier.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Currier.xcodeproj; path = ../Currier/Currier.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C37DC661E56200800591CA1 /* Currier.framework in Frameworks */,
+				0C07C2E21E52614D00A921A8 /* ParserCombinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +161,8 @@
 		0C07C2B51E525E0E00A921A8 = {
 			isa = PBXGroup;
 			children = (
+				0CC576491E55064C0045BF4A /* Currier.xcodeproj */,
+				0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */,
 				0C07C2C11E525E0F00A921A8 /* PGNParser */,
 				0C07C2CC1E525E0F00A921A8 /* PGNParserTests */,
 				0C07C2C01E525E0F00A921A8 /* Products */,
@@ -73,6 +183,8 @@
 			children = (
 				0C07C2C21E525E0F00A921A8 /* PGNParser.h */,
 				0C07C2C31E525E0F00A921A8 /* Info.plist */,
+				0C1657361E9D655300C152C5 /* DraughtsMove.swift */,
+				0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */,
 			);
 			path = PGNParser;
 			sourceTree = "<group>";
@@ -80,10 +192,38 @@
 		0C07C2CC1E525E0F00A921A8 /* PGNParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C07C2CD1E525E0F00A921A8 /* PGNParserTests.swift */,
+				0C16575C1E9D826300C152C5 /* DraughtsMoveTests.swift */,
 				0C07C2CF1E525E0F00A921A8 /* Info.plist */,
 			);
 			path = PGNParserTests;
+			sourceTree = "<group>";
+		};
+		0C07C2DA1E5260F200A921A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C07C2DF1E5260F200A921A8 /* ParserCombinator.framework */,
+				0C1657511E9D655300C152C5 /* ParserCombinator.framework */,
+				0C1657531E9D655300C152C5 /* ParserCombinator.framework */,
+				0C1657551E9D655300C152C5 /* ParserCombinator.framework */,
+				0C07C2E11E5260F200A921A8 /* ParserCombinatorTests.xctest */,
+				0C1657571E9D655300C152C5 /* ParserCombinatorTests-macOS.xctest */,
+				0C1657591E9D655300C152C5 /* ParserCombinatorTests-tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CC5764A1E55064C0045BF4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC5764F1E55064C0045BF4A /* Currier.framework */,
+				0C1657401E9D655300C152C5 /* Currier.framework */,
+				0C1657421E9D655300C152C5 /* Currier.framework */,
+				0C1657441E9D655300C152C5 /* Currier.framework */,
+				0CC576511E55064C0045BF4A /* CurrierTests.xctest */,
+				0C1657461E9D655300C152C5 /* CurrierTests-macOS.xctest */,
+				0C1657481E9D655300C152C5 /* CurrierTests-tvOS.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +289,7 @@
 					0C07C2BE1E525E0F00A921A8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9VLH29SKZ;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					0C07C2C71E525E0F00A921A8 = {
@@ -168,6 +309,16 @@
 			mainGroup = 0C07C2B51E525E0E00A921A8;
 			productRefGroup = 0C07C2C01E525E0F00A921A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0CC5764A1E55064C0045BF4A /* Products */;
+					ProjectRef = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
+				},
+				{
+					ProductGroup = 0C07C2DA1E5260F200A921A8 /* Products */;
+					ProjectRef = 0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0C07C2BE1E525E0F00A921A8 /* PGNParser */,
@@ -175,6 +326,107 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0C07C2DF1E5260F200A921A8 /* ParserCombinator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParserCombinator.framework;
+			remoteRef = 0C07C2DE1E5260F200A921A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C07C2E11E5260F200A921A8 /* ParserCombinatorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ParserCombinatorTests.xctest;
+			remoteRef = 0C07C2E01E5260F200A921A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657401E9D655300C152C5 /* Currier.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Currier.framework;
+			remoteRef = 0C16573F1E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657421E9D655300C152C5 /* Currier.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Currier.framework;
+			remoteRef = 0C1657411E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657441E9D655300C152C5 /* Currier.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Currier.framework;
+			remoteRef = 0C1657431E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657461E9D655300C152C5 /* CurrierTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CurrierTests-macOS.xctest";
+			remoteRef = 0C1657451E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657481E9D655300C152C5 /* CurrierTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CurrierTests-tvOS.xctest";
+			remoteRef = 0C1657471E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657511E9D655300C152C5 /* ParserCombinator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParserCombinator.framework;
+			remoteRef = 0C1657501E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657531E9D655300C152C5 /* ParserCombinator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParserCombinator.framework;
+			remoteRef = 0C1657521E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657551E9D655300C152C5 /* ParserCombinator.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParserCombinator.framework;
+			remoteRef = 0C1657541E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657571E9D655300C152C5 /* ParserCombinatorTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ParserCombinatorTests-macOS.xctest";
+			remoteRef = 0C1657561E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C1657591E9D655300C152C5 /* ParserCombinatorTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ParserCombinatorTests-tvOS.xctest";
+			remoteRef = 0C1657581E9D655300C152C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CC5764F1E55064C0045BF4A /* Currier.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Currier.framework;
+			remoteRef = 0CC5764E1E55064C0045BF4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CC576511E55064C0045BF4A /* CurrierTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CurrierTests.xctest;
+			remoteRef = 0CC576501E55064C0045BF4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0C07C2BD1E525E0F00A921A8 /* Resources */ = {
@@ -198,6 +450,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */,
+				0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C07C2CE1E525E0F00A921A8 /* PGNParserTests.swift in Sources */,
+				0C16575D1E9D826300C152C5 /* DraughtsMoveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +576,7 @@
 		0C07C2D41E525E0F00A921A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
@@ -335,6 +590,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,6 +598,7 @@
 		0C07C2D51E525E0F00A921A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
@@ -362,6 +619,7 @@
 		0C07C2D71E525E0F00A921A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
 				INFOPLIST_FILE = PGNParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +632,7 @@
 		0C07C2D81E525E0F00A921A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
 				INFOPLIST_FILE = PGNParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +661,7 @@
 				0C07C2D51E525E0F00A921A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C07C2D61E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParserTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +670,7 @@
 				0C07C2D81E525E0F00A921A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

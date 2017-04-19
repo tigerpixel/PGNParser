@@ -1,0 +1,303 @@
+//
+//  DraughtsMoveTests.swift
+//  PGNParser
+//
+//  Created by Liam on 11/04/2017.
+//  Copyright © 2017 Tigerpixel Ltd. All rights reserved.
+//
+
+import XCTest
+@testable import PGNParser
+
+class DraughtsMoveTests: XCTestCase {
+    
+    func testSingleValidMoveWhiteOnly() {
+        
+        // White moves one piece from position 9 to position 14 to open the game.
+        let sinlgeMoveWhitePlayer = "1. 9-14"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: sinlgeMoveWhitePlayer) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual("", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertNil(firstMove.black)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+        
+    }
+    
+    func testSingleValidMoveBothPlayers() {
+        
+        // White moves one piece from position 9 to position 14 to open the game.
+        // Black responds by moving the piece at position 23 to position 18. 
+        // No pieces are captured.
+        let sinlgeMoveTwoPlayers = "1. 9-14 23-18"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: sinlgeMoveTwoPlayers) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual("", String(tail))
+
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(false, firstMove.black?.hasCapture)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+
+    func testSingleValidMoveBothPlayersWithAdditionalData() {
+        
+        let sinlgeMoveTwoPlayersWithNote = "1. 9-14 23-18 //A Note"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: sinlgeMoveTwoPlayersWithNote) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual(" //A Note", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(false, firstMove.black?.hasCapture)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+    
+    func testMultipleValidMovesBothPlayers() {
+        
+        let multipleMoves = "1. 9-14 23-18 2. 14-17 18-15"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: multipleMoves) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(2, moves.count)
+            XCTAssertEqual("", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(false, firstMove.black?.hasCapture)
+            }
+            
+            if let lastMove = moves.last {
+                XCTAssertEqual(14, lastMove.white.from)
+                XCTAssertEqual(17, lastMove.white.to)
+                XCTAssertEqual(false, lastMove.white.hasCapture)
+                
+                XCTAssertEqual(18, lastMove.black?.from)
+                XCTAssertEqual(15, lastMove.black?.to)
+                XCTAssertEqual(false, lastMove.black?.hasCapture)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+    
+    func testMultipleValidMovesLastTurnWhite() {
+        
+        let multipleMoves = "1. 9-14 23-18 2. 14-17"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: multipleMoves) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(2, moves.count)
+            XCTAssertEqual("", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(false, firstMove.black?.hasCapture)
+            }
+            
+            if let lastMove = moves.last {
+                XCTAssertEqual(14, lastMove.white.from)
+                XCTAssertEqual(17, lastMove.white.to)
+                XCTAssertEqual(false, lastMove.white.hasCapture)
+                
+                XCTAssertNil(lastMove.black)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+    
+    func testValidMovesWithCaptures() {
+        
+        // Both players move and as they do they capture another piece. 
+        // This is an impossible move in the standard game of draughts.
+        let multipleMoves = "1. 9x14 23x18"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: multipleMoves) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual("", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(true, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(true, firstMove.black?.hasCapture)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+    
+    func testValidMovesForWholeGame() {
+        
+        // Data for a full game.
+        // Sourced from .......
+        let fullGame = "1. 9-14 23-18 2. 14x23 27x18 3. 5-9 26-23 4. 12-16 30-26 5. 16-19 24x15 6. 10x19 23x16 7. 11x20 22-17 8. 7-11 18-15 9. 11x18 28-24 10. 20x27 32x5 11. 8-11 26-23 12. 4-8 25-22 13. 11-15 17-13 14. 8-11 21-17 15. 11-16 23-18 16. 15-19 17-14 17. 19-24 14-10 18. 6x15 18x11 19. 24-28 22-17 20. 28-32 17-14 21. 32-28 31-27 22. 16-19 27-24 23. 19-23 24-20 24. 23-26 29-25 25. 26-30 25-21 26. 30-26 14-9 27. 26-23 20-16 28. 23-18 16-12 29. 18-14 11-8 30. 28-24 8-4 31. 24-19 4-8 32. 19-16 9-6 33. 1x10 5-1 34. 10-15 1-6 35. 2x9 13x6 36. 16-11 8-4 37. 15-18 6-1 38. 18-22 1-6 39. 22-26 6-1 40. 26-30 1-6 41. 30-26 6-1 42. 26-22 1-6 43. 22-18 6-1 44. 14-9 1-5 45. 9-6 21-17 46. 18-22"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: fullGame) {
+        case .success(let moves, let tail):
+            
+            XCTAssertEqual(46, moves.count)
+            XCTAssertEqual("", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(false, firstMove.black?.hasCapture)
+            }
+            else {
+                XCTFail()
+            }
+
+            let moveWithCapture = moves[5]
+            XCTAssertEqual(10, moveWithCapture.white.from)
+            XCTAssertEqual(19, moveWithCapture.white.to)
+            XCTAssertEqual(true, moveWithCapture.white.hasCapture)
+            
+            XCTAssertEqual(23, moveWithCapture.black?.from)
+            XCTAssertEqual(16, moveWithCapture.black?.to)
+            XCTAssertEqual(true, moveWithCapture.black?.hasCapture)
+            
+            if let lastMove = moves.last {
+                XCTAssertEqual(18, lastMove.white.from)
+                XCTAssertEqual(22, lastMove.white.to)
+                XCTAssertEqual(false, lastMove.white.hasCapture)
+                
+                XCTAssertNil(lastMove.black)
+            }
+            else {
+                XCTFail()
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+    
+    func testNoMoves() {
+        
+        switch DraughtsMove.parse(fromPortableGameNotation:"") {
+        case .success(_, _):
+            XCTFail()
+            
+        case .failure(let reason):
+            if case .insufficiantTokens = reason {
+                return
+            }
+            XCTFail()
+        }
+    }
+    
+    func testInvalidMovesWithMiscInput() {
+        
+        // Enter completely different input just to check that it handles the error gracefully.
+        let invalidAlphanumbericInput = "1n jkfuf ufjf jnkf  j1j2 8485ui5j 4"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: invalidAlphanumbericInput) {
+            
+        case .failure(let reason):
+            if case .unexpectedToken(let token, let tail) = reason {
+                XCTAssertEqual("n", String(token))
+                XCTAssertEqual(" jkfuf ufjf jnkf  j1j2 8485ui5j 4", String(tail))
+            }
+            else {
+                XCTFail()
+            }
+            
+        case .success(_, _):
+            XCTFail()
+        }
+    }
+    
+    func testInvalidMovesWithMissingNumber() {
+        
+        // Miss out the number as a possible common error.
+        let missingRoundNumber = "1. 9-14 23-18 14x23 27x18"
+        
+        switch DraughtsMove.parse(fromPortableGameNotation: missingRoundNumber) {
+        case .success(let moves, let tail):
+            
+            // NOTE: This situation succeeds because there are valid results at the start of the input sting.
+            // This may be deemed as unexpected and it may be better to find a way to make this fail.
+            
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual(" 14x23 27x18", String(tail))
+            
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.from)
+                XCTAssertEqual(14, firstMove.white.to)
+                XCTAssertEqual(false, firstMove.white.hasCapture)
+                
+                XCTAssertEqual(23, firstMove.black?.from)
+                XCTAssertEqual(18, firstMove.black?.to)
+                XCTAssertEqual(false, firstMove.black?.hasCapture)
+            }
+            
+        case .failure(_):
+            XCTFail()
+        }
+    }
+    
+    
+    
+}
