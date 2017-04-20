@@ -9,19 +9,25 @@
 import Foundation
 import ParserCombinator
 
+/// The positions on the board conform to an interger number.
+typealias BoardPosition = Int
+
 /**
  Describes a single move performed by one player.
  */
 public struct DraughtsPieceMove {
-    
-    let from: Int
-    let to: Int
-    let hasCapture: Bool
-    
+
+    /// The starting position of the piece which should be moved.
+    let origin: BoardPosition
+    /// The resting position of the piece after the move is made.
+    let destination: BoardPosition
+    /// A flag to indicate if any opponenets pieces were captured during the move.
+    let isCapture: Bool
+
 }
 
 extension DraughtsPieceMove {
-    
+
     /**
      A constructor with the parameters in the order of draughts portable game notation.
      
@@ -34,12 +40,13 @@ extension DraughtsPieceMove {
      
      - parameter to: The location at which the piece resides after the move.
      */
-    init(from: Int, hasCapture: Bool, to: Int) {
-        self.from = from
-        self.to = to
-        self.hasCapture = hasCapture
+    init(origin: BoardPosition, isCapture: Bool, destination: BoardPosition) {
+        
+        self.origin = origin
+        self.destination = destination
+        self.isCapture = isCapture
     }
-    
+
 }
 
 /**
@@ -49,14 +56,14 @@ extension DraughtsPieceMove {
  A move in technical draughts terms refers to a round of moves by both players.
  */
 public struct DraughtsMove {
-    
+
     let white: DraughtsPieceMove
     let black: DraughtsPieceMove?
-    
+
 }
 
 extension DraughtsMove {
-    
+
     /**
      Parse the input draughts portable game notation string into an array of draughts moves.
      
@@ -67,8 +74,8 @@ extension DraughtsMove {
      - returns: A result of the parse. If successful it will contain the move objects.
      */
     public static func parse(fromPortableGameNotation notation: String) -> ParseResult<[DraughtsMove]> {
-        
+
         return DraughtsNotationParser.portableGameNotation().run(withInput: notation)
     }
-    
+
 }
