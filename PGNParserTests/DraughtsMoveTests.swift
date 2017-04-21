@@ -9,6 +9,7 @@
 import XCTest
 @testable import PGNParser
 
+// swiftlint:disable type_body_length
 class DraughtsMoveTests: XCTestCase {
 
     func testSingleValidMoveWhiteOnly() {
@@ -26,6 +27,7 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertNil(firstMove.black)
             }
@@ -52,10 +54,12 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(false, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
             }
 
         case .failure(_):
@@ -77,10 +81,12 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(false, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
             }
 
         case .failure(_):
@@ -102,20 +108,24 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(false, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
             }
 
             if let lastMove = moves.last {
                 XCTAssertEqual(14, lastMove.white.origin)
                 XCTAssertEqual(17, lastMove.white.destination)
                 XCTAssertEqual(false, lastMove.white.isCapture)
+                XCTAssertEqual([], lastMove.white.intermediatePositions)
 
                 XCTAssertEqual(18, lastMove.black?.origin)
                 XCTAssertEqual(15, lastMove.black?.destination)
                 XCTAssertEqual(false, lastMove.black?.isCapture)
+                XCTAssertEqual([], lastMove.black?.intermediatePositions ?? [0])
             }
 
         case .failure(_):
@@ -137,16 +147,19 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(false, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
             }
 
             if let lastMove = moves.last {
                 XCTAssertEqual(14, lastMove.white.origin)
                 XCTAssertEqual(17, lastMove.white.destination)
                 XCTAssertEqual(false, lastMove.white.isCapture)
+                XCTAssertEqual([], lastMove.white.intermediatePositions)
 
                 XCTAssertNil(lastMove.black)
             }
@@ -172,10 +185,68 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(true, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(true, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
+            }
+
+        case .failure(_):
+            XCTFail()
+        }
+    }
+
+    func testValidMovesWithMultipleCaptures() {
+
+        // Both players move and as they do they capture other pieces.
+        let multipleMoves = "1. 9x14x17 23x18x12"
+
+        switch DraughtsMove.parse(fromPortableGameNotation: multipleMoves) {
+        case .success(let moves, let tail):
+
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual("", String(tail))
+
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.origin)
+                XCTAssertEqual(17, firstMove.white.destination)
+                XCTAssertEqual(true, firstMove.white.isCapture)
+                XCTAssertEqual([14], firstMove.white.intermediatePositions)
+
+                XCTAssertEqual(23, firstMove.black?.origin)
+                XCTAssertEqual(12, firstMove.black?.destination)
+                XCTAssertEqual(true, firstMove.black?.isCapture)
+                XCTAssertEqual([18], firstMove.black?.intermediatePositions ?? [])
+            }
+
+        case .failure(_):
+            XCTFail()
+        }
+    }
+
+    func testValidMovesWithManyCaptures() {
+
+        // Both players move and as they do they capture another pieces.
+        let multipleMoves = "1. 9x14x17x21 23x18x12x9x6"
+
+        switch DraughtsMove.parse(fromPortableGameNotation: multipleMoves) {
+        case .success(let moves, let tail):
+
+            XCTAssertEqual(1, moves.count)
+            XCTAssertEqual("", String(tail))
+
+            if let firstMove = moves.first {
+                XCTAssertEqual(9, firstMove.white.origin)
+                XCTAssertEqual(21, firstMove.white.destination)
+                XCTAssertEqual(true, firstMove.white.isCapture)
+                XCTAssertEqual([14, 17], firstMove.white.intermediatePositions)
+
+                XCTAssertEqual(23, firstMove.black?.origin)
+                XCTAssertEqual(6, firstMove.black?.destination)
+                XCTAssertEqual(true, firstMove.black?.isCapture)
+                XCTAssertEqual([18, 12, 9], firstMove.black?.intermediatePositions ?? [])
             }
 
         case .failure(_):
@@ -203,10 +274,12 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(false, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
             } else {
                 XCTFail()
             }
@@ -215,15 +288,18 @@ class DraughtsMoveTests: XCTestCase {
             XCTAssertEqual(10, moveWithCapture.white.origin)
             XCTAssertEqual(19, moveWithCapture.white.destination)
             XCTAssertEqual(true, moveWithCapture.white.isCapture)
+            XCTAssertEqual([], moveWithCapture.white.intermediatePositions)
 
             XCTAssertEqual(23, moveWithCapture.black?.origin)
             XCTAssertEqual(16, moveWithCapture.black?.destination)
             XCTAssertEqual(true, moveWithCapture.black?.isCapture)
+            XCTAssertEqual([], moveWithCapture.black?.intermediatePositions ?? [0])
 
             if let lastMove = moves.last {
                 XCTAssertEqual(18, lastMove.white.origin)
                 XCTAssertEqual(22, lastMove.white.destination)
                 XCTAssertEqual(false, lastMove.white.isCapture)
+                XCTAssertEqual([], lastMove.white.intermediatePositions)
 
                 XCTAssertNil(lastMove.black)
             } else {
@@ -279,7 +355,6 @@ class DraughtsMoveTests: XCTestCase {
 
             // NOTE: This succeeds because there are valid results at the start of the input sting.
             // It may be deemed as unexpected and it may be better to find a way to make this fail.
-
             XCTAssertEqual(1, moves.count)
             XCTAssertEqual(" 14x23 27x18", String(tail))
 
@@ -287,10 +362,12 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual(9, firstMove.white.origin)
                 XCTAssertEqual(14, firstMove.white.destination)
                 XCTAssertEqual(false, firstMove.white.isCapture)
+                XCTAssertEqual([], firstMove.white.intermediatePositions)
 
                 XCTAssertEqual(23, firstMove.black?.origin)
                 XCTAssertEqual(18, firstMove.black?.destination)
                 XCTAssertEqual(false, firstMove.black?.isCapture)
+                XCTAssertEqual([], firstMove.black?.intermediatePositions ?? [0])
             }
 
         case .failure(_):
@@ -299,3 +376,4 @@ class DraughtsMoveTests: XCTestCase {
     }
 
 }
+// swiftlint:enable type_body_length

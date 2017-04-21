@@ -25,6 +25,7 @@ struct DraughtsNotationParser {
 
         let singlePieceMove = curry(DraughtsPieceMove.init) <^> integerNumber
                                                             <*> lowercaseXIsTrue <|> hyphenIsFalse
+                                                            <*> (integerNumber <* lowercaseX).zeroOneOrMany
                                                             <*> integerNumber
 
         let moveRound = numberWithPoint *> twoPlayerTurn(singlePieceMove)
@@ -32,8 +33,11 @@ struct DraughtsNotationParser {
         return moveRound.oneOrMany
     }
 
+    /// A parser which will succeed on a lowercase 'x' and fail on any other input token.
+    private static let lowercaseX = character(isEqualTo: "x")
+
     /// A parser which resolves lowercase x to a boolean true and fails on all other input strings.
-    private static let lowercaseXIsTrue = character(isEqualTo: "x").map { _ in return true }
+    private static let lowercaseXIsTrue = lowercaseX.map { _ in return true }
 
     /// A parser which resolves a hyphen to a boolean false and fails on all other input strings.
     private static let hyphenIsFalse = character(isEqualTo: "-").map { _ in return false }

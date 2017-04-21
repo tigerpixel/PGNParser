@@ -20,6 +20,8 @@ public struct DraughtsPieceMove {
     let origin: BoardPosition
     /// The resting position of the piece after the move is made.
     let destination: BoardPosition
+    /// A list of intermediate positions the piece passed through to get to its destination.
+    let intermediatePositions: [BoardPosition]
     /// A flag to indicate if any opponenets pieces were captured during the move.
     let isCapture: Bool
 
@@ -33,17 +35,20 @@ extension DraughtsPieceMove {
      This constructor simplifies the creation of a parser for the move.
      It should remain in an extension so that it does not replace the default constructor.
      
-     - parameter from: The location of the piece that is to be moved.
+     - parameter origin: The location of the piece that is to be moved.
      
-     - parameter hasCapture: True if the piece captures another piece, false if none are captured.
+     - parameter isCapture: True if the piece captures another piece, false if none are captured.
      
-     - parameter to: The location at which the piece resides after the move.
+     - parameter intermediates: Any position which the piece moved through between its origin and destination.
+     
+     - parameter destination: The location at which the piece resides after the move.
      */
-    init(origin: BoardPosition, isCapture: Bool, destination: BoardPosition) {
+    init(origin: BoardPosition, isCapture: Bool, intermediates: [BoardPosition], destination: BoardPosition) {
 
         self.origin = origin
-        self.destination = destination
         self.isCapture = isCapture
+        self.intermediatePositions = intermediates
+        self.destination = destination
     }
 
 }
