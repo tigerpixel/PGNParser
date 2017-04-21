@@ -277,8 +277,8 @@ class DraughtsMoveTests: XCTestCase {
         switch DraughtsMove.parse(fromPortableGameNotation: missingRoundNumber) {
         case .success(let moves, let tail):
 
-            // NOTE: This situation succeeds because there are valid results at the start of the input sting.
-            // This may be deemed as unexpected and it may be better to find a way to make this fail.
+            // NOTE: This succeeds because there are valid results at the start of the input sting.
+            // It may be deemed as unexpected and it may be better to find a way to make this fail.
 
             XCTAssertEqual(1, moves.count)
             XCTAssertEqual(" 14x23 27x18", String(tail))

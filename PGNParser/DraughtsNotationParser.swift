@@ -10,12 +10,12 @@ import ParserCombinator
 import Currier
 
 /**
- Creates a parser to parse a description a draughts game in portable game notation to DraughtsMove objects.
+ Creates a parser to parse a description of a draughts game in portable game notation to DraughtsMove objects.
  */
 struct DraughtsNotationParser {
 
     /**
-     Create a parser which performs the parseing of portable game notation for draughts.
+     Create a parser which performs the parsing of portable game notation for draughts.
      
      Once created the parser can be called multiple times for multiple input game strings.
      
@@ -49,7 +49,7 @@ struct DraughtsNotationParser {
      
      - parameter turn: A parser for a single turn performed by one player.
      
-     - returns: A parser for a draughts move object describing both playes turn for a move.
+     - returns: A parser for a draughts move object describing both player's turns for a move.
      */
     private static func twoPlayerTurn(_ turn: Parser<DraughtsPieceMove>) -> Parser<DraughtsMove> {
 

@@ -6,7 +6,6 @@
 //  Copyright © 2017 Tigerpixel Ltd. All rights reserved.
 //
 
-import Foundation
 import ParserCombinator
 
 /// The positions on the board conform to an interger number.
@@ -17,7 +16,7 @@ typealias BoardPosition = Int
  */
 public struct DraughtsPieceMove {
 
-    /// The starting position of the piece which should be moved.
+    /// The location of the piece which should be moved.
     let origin: BoardPosition
     /// The resting position of the piece after the move is made.
     let destination: BoardPosition
@@ -41,7 +40,7 @@ extension DraughtsPieceMove {
      - parameter to: The location at which the piece resides after the move.
      */
     init(origin: BoardPosition, isCapture: Bool, destination: BoardPosition) {
-        
+
         self.origin = origin
         self.destination = destination
         self.isCapture = isCapture
@@ -52,8 +51,8 @@ extension DraughtsPieceMove {
 /**
  A description of the movement of pieces by both players.
  
- Black is optional as it may not have moved in this round.
  A move in technical draughts terms refers to a round of moves by both players.
+ Black is optional as it may not have moved in this round.
  */
 public struct DraughtsMove {
 
