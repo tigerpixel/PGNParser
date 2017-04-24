@@ -23,10 +23,15 @@ struct DraughtsNotationParser {
      */
     static func portableGameNotation() -> Parser<[DraughtsMove]> {
 
-        let singlePieceMove = curry(DraughtsPieceMove.init) <^> integerNumber
-                                                            <*> lowercaseXIsTrue <|> hyphenIsFalse
-                                                            <*> (integerNumber <* lowercaseX).zeroOneOrMany
-                                                            <*> integerNumber
+        let origin = integerNumber
+        let isCapture = lowercaseXIsTrue <|> hyphenIsFalse
+        let intermediates = (integerNumber <* lowercaseX).zeroOneOrMany
+        let destination = integerNumber
+
+        let singlePieceMove = curry(DraughtsPieceMove.init) <^> origin
+                                                            <*> isCapture
+                                                            <*> intermediates
+                                                            <*> destination
 
         let moveRound = numberWithPoint *> twoPlayerTurn(singlePieceMove)
 
@@ -77,7 +82,13 @@ struct DraughtsNotationParser {
 
         let singleMove = whitespace.zeroOneOrMany *> turn
 
-        return curry(DraughtsMove.init) <^> singleMove <*> singleMove.optional <*> optionalCommentAfterWhitespace
+        let whiteMove = singleMove
+        let blackMove = singleMove.optional
+        let comment = optionalCommentAfterWhitespace
+
+        return curry(DraughtsMove.init) <^> whiteMove
+                                        <*> blackMove
+                                        <*> comment
     }
 
 }

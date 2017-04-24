@@ -74,13 +74,13 @@ class DraughtsMoveTests: XCTestCase {
 
     func testSingleValidMoveBothPlayersWithAdditionalData() {
 
-        let sinlgeMoveTwoPlayersWithNote = "1. 9-14 23-18 //A Note"
+        let sinlgeMoveTwoPlayersWithNote = "1. 9-14 23-18 Additional input."
 
         switch DraughtsMove.parse(fromPortableGameNotation: sinlgeMoveTwoPlayersWithNote) {
         case .success(let moves, let tail):
 
             XCTAssertEqual(1, moves.count)
-            XCTAssertEqual("//A Note", String(tail))
+            XCTAssertEqual("Additional input.", String(tail))
 
             if let firstMove = moves.first {
                 XCTAssertEqual(9, firstMove.white.origin)
