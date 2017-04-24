@@ -48,6 +48,24 @@ struct DraughtsNotationParser {
     /// A parser which resolves numbers followed by a fullStop and fails on all other input strings.
     private static let numberWithPoint = whitespace.zeroOneOrMany *> digit.oneOrMany *> fullStop
 
+    /// A parser which will succeed on an open curly bracket and fail on any other input token.
+    private static let openCurlyBracket = character(isEqualTo: "{")
+
+    /// A parser which will succeed on a close curly bracket and fail on any other input token.
+    private static let closeCurlyBracket = character { $0 == "}" }
+
+    /// A parser which will fail on a close curly bracket and succeed on any other input token.
+    private static let notCloseCurlyBracket = character { $0 != "}" }
+
+    /// A parser which will continue parsing upto but not including the next close curly bracket.
+    private static let untilCloseCurlyBracket: Parser<String> = notCloseCurlyBracket.zeroOneOrMany.map { String($0) }
+
+    /// A parser which will parse a comment between and open and close curly bracket, keeping only the comment.
+    private static let comment: Parser<String> = openCurlyBracket *> untilCloseCurlyBracket <* closeCurlyBracket
+
+    /// A Parser which will parse a comment with whitespace before it and if the comment exists, keep only the comment.
+    private static let optionalCommentAfterWhitespace: Parser<String?> = whitespace.zeroOneOrMany *> comment.optional
+
     /**
      Combine a description of a single player turn into a full move with up to two player turns.
      
@@ -59,7 +77,7 @@ struct DraughtsNotationParser {
 
         let singleMove = whitespace.zeroOneOrMany *> turn
 
-        return curry(DraughtsMove.init) <^> singleMove <*> singleMove.optional
+        return curry(DraughtsMove.init) <^> singleMove <*> singleMove.optional <*> optionalCommentAfterWhitespace
     }
 
 }
