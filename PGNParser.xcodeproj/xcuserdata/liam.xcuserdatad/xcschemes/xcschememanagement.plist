@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PGNParser.xcscheme</key>
+		<key>PGNParser-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<key>PGNParser-macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>PGNParser-tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>PGNParser-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,36 @@
 			<true/>
 		</dict>
 		<key>0C07C2C71E525E0F00A921A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C3F61BD1EB2715700D8BB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C3F61C51EB2715700D8BB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C3F61E71EB2716F00D8BB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C3F61EF1EB2716F00D8BB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C3F62031EB2717F00D8BB32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C3F620B1EB2717F00D8BB32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
