@@ -14,7 +14,6 @@
 		0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
 		0C37DC661E56200800591CA1 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5764F1E55064C0045BF4A /* Currier.framework */; };
 		0C3F61C71EB2715700D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */; };
-		0C3F61F11EB2716F00D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */; };
 		0C3F620D1EB2717F00D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F62041EB2717F00D8BB32 /* PGNParser.framework */; };
 		0C3F621B1EB272BA00D8BB32 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
 		0C3F621C1EB272BA00D8BB32 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
@@ -30,7 +29,6 @@
 		0C3F62291EB2735900D8BB32 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657551E9D655300C152C5 /* ParserCombinator.framework */; };
 		0CF325681EB32B9A00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
 		0CF325691EB32B9B00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
-		0CF3256A1EB32B9C00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
 		0CF3256B1EB32B9D00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
 		0CF325701EB32BAB00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CF325711EB32BAB00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -136,13 +134,6 @@
 			remoteGlobalIDString = 0C3F61BD1EB2715700D8BB32;
 			remoteInfo = "PGNParser-macOS";
 		};
-		0C3F61F21EB2716F00D8BB32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C07C2B61E525E0E00A921A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C3F61E71EB2716F00D8BB32;
-			remoteInfo = "PGNParser-watchOS";
-		};
 		0C3F620E1EB2717F00D8BB32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0C07C2B61E525E0E00A921A8 /* Project object */;
@@ -177,7 +168,6 @@
 		0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F61C61EB2715700D8BB32 /* PGNParserTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C3F61F01EB2716F00D8BB32 /* PGNParserTests-watchOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-watchOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F62041EB2717F00D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F620C1EB2717F00D8BB32 /* PGNParserTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC576491E55064C0045BF4A /* Currier.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Currier.xcodeproj; path = ../Currier/Currier.xcodeproj; sourceTree = "<group>"; };
@@ -229,14 +219,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C3F61ED1EB2716F00D8BB32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C3F61F11EB2716F00D8BB32 /* PGNParser.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C3F62001EB2717F00D8BB32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,7 +260,6 @@
 				0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */,
 				0C3F61C61EB2715700D8BB32 /* PGNParserTests-macOS.xctest */,
 				0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */,
-				0C3F61F01EB2716F00D8BB32 /* PGNParserTests-watchOS.xctest */,
 				0C3F62041EB2717F00D8BB32 /* PGNParser.framework */,
 				0C3F620C1EB2717F00D8BB32 /* PGNParserTests-tvOS.xctest */,
 			);
@@ -484,24 +465,6 @@
 			productReference = 0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0C3F61EF1EB2716F00D8BB32 /* PGNParserTests-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C3F61FC1EB2716F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParserTests-watchOS" */;
-			buildPhases = (
-				0C3F61EC1EB2716F00D8BB32 /* Sources */,
-				0C3F61ED1EB2716F00D8BB32 /* Frameworks */,
-				0C3F61EE1EB2716F00D8BB32 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C3F61F31EB2716F00D8BB32 /* PBXTargetDependency */,
-			);
-			name = "PGNParserTests-watchOS";
-			productName = "PGNParser-watchOSTests";
-			productReference = 0C3F61F01EB2716F00D8BB32 /* PGNParserTests-watchOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		0C3F62031EB2717F00D8BB32 /* PGNParser-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C3F62151EB2717F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-tvOS" */;
@@ -573,11 +536,6 @@
 						DevelopmentTeam = X9VLH29SKZ;
 						ProvisioningStyle = Automatic;
 					};
-					0C3F61EF1EB2716F00D8BB32 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = X9VLH29SKZ;
-						ProvisioningStyle = Automatic;
-					};
 					0C3F62031EB2717F00D8BB32 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X9VLH29SKZ;
@@ -618,7 +576,6 @@
 				0C3F62031EB2717F00D8BB32 /* PGNParser-tvOS */,
 				0C07C2C71E525E0F00A921A8 /* PGNParserTests-iOS */,
 				0C3F61C51EB2715700D8BB32 /* PGNParserTests-macOS */,
-				0C3F61EF1EB2716F00D8BB32 /* PGNParserTests-watchOS */,
 				0C3F620B1EB2717F00D8BB32 /* PGNParserTests-tvOS */,
 			);
 		};
@@ -761,13 +718,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C3F61EE1EB2716F00D8BB32 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C3F62021EB2717F00D8BB32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -844,14 +794,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C3F61EC1EB2716F00D8BB32 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CF3256A1EB32B9C00F834D7 /* DraughtsMoveTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C3F61FF1EB2717F00D8BB32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -881,11 +823,6 @@
 			isa = PBXTargetDependency;
 			target = 0C3F61BD1EB2715700D8BB32 /* PGNParser-macOS */;
 			targetProxy = 0C3F61C81EB2715700D8BB32 /* PBXContainerItemProxy */;
-		};
-		0C3F61F31EB2716F00D8BB32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C3F61E71EB2716F00D8BB32 /* PGNParser-watchOS */;
-			targetProxy = 0C3F61F21EB2716F00D8BB32 /* PBXContainerItemProxy */;
 		};
 		0C3F620F1EB2717F00D8BB32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -938,6 +875,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -986,6 +924,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1171,11 +1110,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
 				PRODUCT_NAME = PGNParser;
-				SDKROOT = appletvos;
+				SDKROOT = watchos3.2;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1195,43 +1135,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
 				PRODUCT_NAME = PGNParser;
-				SDKROOT = appletvos;
+				SDKROOT = watchos3.2;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
-		0C3F61FD1EB2716F00D8BB32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = X9VLH29SKZ;
-				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-watchOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		0C3F61FE1EB2716F00D8BB32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = X9VLH29SKZ;
-				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-watchOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1368,15 +1277,6 @@
 			buildConfigurations = (
 				0C3F61FA1EB2716F00D8BB32 /* Debug */,
 				0C3F61FB1EB2716F00D8BB32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0C3F61FC1EB2716F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParserTests-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C3F61FD1EB2716F00D8BB32 /* Debug */,
-				0C3F61FE1EB2716F00D8BB32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
