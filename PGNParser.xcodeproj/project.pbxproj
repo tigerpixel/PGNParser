@@ -12,6 +12,11 @@
 		0C07C2E21E52614D00A921A8 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07C2DF1E5260F200A921A8 /* ParserCombinator.framework */; };
 		0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
 		0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
+		0C1DAFAA1EB906CC001E1AE1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0C1DAFA61EB906CC001E1AE1 /* LICENSE */; };
+		0C1DAFAB1EB906CC001E1AE1 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DAFA71EB906CC001E1AE1 /* Package.swift */; };
+		0C1DAFAC1EB906CC001E1AE1 /* PGNParser.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0C1DAFA81EB906CC001E1AE1 /* PGNParser.podspec */; };
+		0C1DAFAD1EB906CC001E1AE1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DAFA91EB906CC001E1AE1 /* README.md */; };
+		0C24F6A11EB9C5ED00D8CD01 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 0C24F6A01EB9C5ED00D8CD01 /* CHANGELOG.md */; };
 		0C37DC661E56200800591CA1 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5764F1E55064C0045BF4A /* Currier.framework */; };
 		0C3F61C71EB2715700D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */; };
 		0C3F620D1EB2717F00D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F62041EB2717F00D8BB32 /* PGNParser.framework */; };
@@ -165,6 +170,11 @@
 		0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParserCombinator.xcodeproj; path = ../ParserCombinator/ParserCombinator.xcodeproj; sourceTree = "<group>"; };
 		0C1657361E9D655300C152C5 /* DraughtsMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMove.swift; sourceTree = "<group>"; };
 		0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsNotationParser.swift; sourceTree = "<group>"; };
+		0C1DAFA61EB906CC001E1AE1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0C1DAFA71EB906CC001E1AE1 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		0C1DAFA81EB906CC001E1AE1 /* PGNParser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PGNParser.podspec; sourceTree = "<group>"; };
+		0C1DAFA91EB906CC001E1AE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0C24F6A01EB9C5ED00D8CD01 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F61C61EB2715700D8BB32 /* PGNParserTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +310,11 @@
 		0C3F622A1EB273ED00D8BB32 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				0C24F6A01EB9C5ED00D8CD01 /* CHANGELOG.md */,
+				0C1DAFA61EB906CC001E1AE1 /* LICENSE */,
+				0C1DAFA71EB906CC001E1AE1 /* Package.swift */,
+				0C1DAFA81EB906CC001E1AE1 /* PGNParser.podspec */,
+				0C1DAFA91EB906CC001E1AE1 /* README.md */,
 			);
 			name = Docs;
 			sourceTree = "<group>";
@@ -687,6 +702,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1DAFAA1EB906CC001E1AE1 /* LICENSE in Resources */,
+				0C1DAFAC1EB906CC001E1AE1 /* PGNParser.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,7 +772,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1DAFAB1EB906CC001E1AE1 /* Package.swift in Sources */,
+				0C24F6A11EB9C5ED00D8CD01 /* CHANGELOG.md in Sources */,
 				0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */,
+				0C1DAFAD1EB906CC001E1AE1 /* README.md in Sources */,
 				0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
