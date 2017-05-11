@@ -6,7 +6,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/PGNParser.svg?style=flat)](http://cocoapods.org/pods/PGNParser)
 
-PGNParser is designed to parse [Portable Game Notation](https://en.wikipedia.org/wiki/Portable_Game_Notation)] files describing Chess and Draughts moves into simple Swift structures. 
+PGNParser is designed to parse [Portable Game Notation](https://en.wikipedia.org/wiki/Portable_Game_Notation) files describing Chess and Draughts moves into simple Swift structures. 
 
 Currently only the draughts game strings have been implemented. Pull request are welcome for further features.
 
@@ -34,8 +34,9 @@ case .failure(let reason):
 
 There are 2 external requirements for this project. Both by Tigerpixel, the same authors.
 
-Currier - A helper for currying functions and initializers which is used with the project.  
-ParserCombinator. - A General parser combinator which is extended to build PGNParser.
+ 
+[Currier](https://github.com/tigerpixel/Currier.git) - A helper for currying functions and initializers which is used with the project.  
+[ParserCombinator](https://github.com/tigerpixel/ParserCombinator.git) - A General parser combinator which is extended to build PGNParser.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 8.2+
@@ -74,7 +75,7 @@ dependencies: [
 .Package(url: "https://github.com/Tigerpixel/PGNParser.git", majorVersion: 0)
 ]
 ```
-The Swift Package Manager can resolve sub dependencies.
+The Swift Package Manager can resolve sub-dependencies.
 
 ### Git Submodule
 
