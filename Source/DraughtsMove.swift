@@ -40,7 +40,7 @@ extension DraughtsPieceMove {
      - parameter isCapture: True if the piece captures another piece, false if none are captured.
      
      - parameter intermediates: Any position which the piece moved through between its origin and destination.
-     
+
      - parameter destination: The location at which the piece resides after the move.
      */
     init(origin: BoardPosition, isCapture: Bool, intermediates: [BoardPosition], destination: BoardPosition) {
@@ -49,6 +49,7 @@ extension DraughtsPieceMove {
         self.isCapture = isCapture
         self.intermediatePositions = intermediates
         self.destination = destination
+
     }
 
 }
@@ -63,6 +64,7 @@ public struct DraughtsMove {
 
     let white: DraughtsPieceMove
     let black: DraughtsPieceMove?
+    let comment: String?
 
 }
 

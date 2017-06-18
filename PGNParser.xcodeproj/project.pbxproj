@@ -12,8 +12,27 @@
 		0C07C2E21E52614D00A921A8 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07C2DF1E5260F200A921A8 /* ParserCombinator.framework */; };
 		0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
 		0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
-		0C16575D1E9D826300C152C5 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575C1E9D826300C152C5 /* DraughtsMoveTests.swift */; };
 		0C37DC661E56200800591CA1 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC5764F1E55064C0045BF4A /* Currier.framework */; };
+		0C3F61C71EB2715700D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */; };
+		0C3F620D1EB2717F00D8BB32 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F62041EB2717F00D8BB32 /* PGNParser.framework */; };
+		0C3F621B1EB272BA00D8BB32 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
+		0C3F621C1EB272BA00D8BB32 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
+		0C3F621D1EB272CD00D8BB32 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
+		0C3F621E1EB272CD00D8BB32 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
+		0C3F621F1EB272D300D8BB32 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
+		0C3F62201EB272D300D8BB32 /* DraughtsNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */; };
+		0C3F62241EB2731300D8BB32 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657421E9D655300C152C5 /* Currier.framework */; };
+		0C3F62251EB2731E00D8BB32 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657531E9D655300C152C5 /* ParserCombinator.framework */; };
+		0C3F62261EB2732600D8BB32 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657401E9D655300C152C5 /* Currier.framework */; };
+		0C3F62271EB2733000D8BB32 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657511E9D655300C152C5 /* ParserCombinator.framework */; };
+		0C3F62281EB2733900D8BB32 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657441E9D655300C152C5 /* Currier.framework */; };
+		0C3F62291EB2735900D8BB32 /* ParserCombinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1657551E9D655300C152C5 /* ParserCombinator.framework */; };
+		0CF325681EB32B9A00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
+		0CF325691EB32B9B00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
+		0CF3256B1EB32B9D00F834D7 /* DraughtsMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */; };
+		0CF325701EB32BAB00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF325711EB32BAB00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF325721EB32BAC00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +127,20 @@
 			remoteGlobalIDString = 0C26E0C01E7BD84D00779771;
 			remoteInfo = "ParserCombinatorTests-tvOS";
 		};
+		0C3F61C81EB2715700D8BB32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2B61E525E0E00A921A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C3F61BD1EB2715700D8BB32;
+			remoteInfo = "PGNParser-macOS";
+		};
+		0C3F620E1EB2717F00D8BB32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C07C2B61E525E0E00A921A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C3F62031EB2717F00D8BB32;
+			remoteInfo = "PGNParser-tvOS";
+		};
 		0CC5764E1E55064C0045BF4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0CC576491E55064C0045BF4A /* Currier.xcodeproj */;
@@ -128,13 +161,23 @@
 		0C07C2BF1E525E0F00A921A8 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C07C2C21E525E0F00A921A8 /* PGNParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGNParser.h; sourceTree = "<group>"; };
 		0C07C2C31E525E0F00A921A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C07C2C81E525E0F00A921A8 /* PGNParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGNParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C07C2CF1E525E0F00A921A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C07C2C81E525E0F00A921A8 /* PGNParserTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParserCombinator.xcodeproj; path = ../ParserCombinator/ParserCombinator.xcodeproj; sourceTree = "<group>"; };
 		0C1657361E9D655300C152C5 /* DraughtsMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMove.swift; sourceTree = "<group>"; };
 		0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsNotationParser.swift; sourceTree = "<group>"; };
-		0C16575C1E9D826300C152C5 /* DraughtsMoveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMoveTests.swift; sourceTree = "<group>"; };
+		0C1DAFA61EB906CC001E1AE1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0C1DAFA71EB906CC001E1AE1 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		0C1DAFA81EB906CC001E1AE1 /* PGNParser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PGNParser.podspec; sourceTree = "<group>"; };
+		0C1DAFA91EB906CC001E1AE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0C24F6A01EB9C5ED00D8CD01 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3F61C61EB2715700D8BB32 /* PGNParserTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3F62041EB2717F00D8BB32 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3F620C1EB2717F00D8BB32 /* PGNParserTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC576491E55064C0045BF4A /* Currier.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Currier.xcodeproj; path = ../Currier/Currier.xcodeproj; sourceTree = "<group>"; };
+		0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMoveTests.swift; sourceTree = "<group>"; };
+		0CF325651EB32B8400F834D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +198,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C3F61BA1EB2715700D8BB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F62251EB2731E00D8BB32 /* ParserCombinator.framework in Frameworks */,
+				0C3F62241EB2731300D8BB32 /* Currier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61C31EB2715700D8BB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F61C71EB2715700D8BB32 /* PGNParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61E41EB2716F00D8BB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F62271EB2733000D8BB32 /* ParserCombinator.framework in Frameworks */,
+				0C3F62261EB2732600D8BB32 /* Currier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F62001EB2717F00D8BB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F62291EB2735900D8BB32 /* ParserCombinator.framework in Frameworks */,
+				0C3F62281EB2733900D8BB32 /* Currier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F62091EB2717F00D8BB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F620D1EB2717F00D8BB32 /* PGNParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -163,8 +249,10 @@
 			children = (
 				0CC576491E55064C0045BF4A /* Currier.xcodeproj */,
 				0C07C2D91E5260F200A921A8 /* ParserCombinator.xcodeproj */,
+				0C3F622A1EB273ED00D8BB32 /* Docs */,
 				0C07C2C11E525E0F00A921A8 /* PGNParser */,
-				0C07C2CC1E525E0F00A921A8 /* PGNParserTests */,
+				0C3F622D1EB274E000D8BB32 /* Source */,
+				0C07C2CC1E525E0F00A921A8 /* Tests */,
 				0C07C2C01E525E0F00A921A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,7 +261,12 @@
 			isa = PBXGroup;
 			children = (
 				0C07C2BF1E525E0F00A921A8 /* PGNParser.framework */,
-				0C07C2C81E525E0F00A921A8 /* PGNParserTests.xctest */,
+				0C07C2C81E525E0F00A921A8 /* PGNParserTests-iOS.xctest */,
+				0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */,
+				0C3F61C61EB2715700D8BB32 /* PGNParserTests-macOS.xctest */,
+				0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */,
+				0C3F62041EB2717F00D8BB32 /* PGNParser.framework */,
+				0C3F620C1EB2717F00D8BB32 /* PGNParserTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,19 +276,16 @@
 			children = (
 				0C07C2C21E525E0F00A921A8 /* PGNParser.h */,
 				0C07C2C31E525E0F00A921A8 /* Info.plist */,
-				0C1657361E9D655300C152C5 /* DraughtsMove.swift */,
-				0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */,
 			);
 			path = PGNParser;
 			sourceTree = "<group>";
 		};
-		0C07C2CC1E525E0F00A921A8 /* PGNParserTests */ = {
+		0C07C2CC1E525E0F00A921A8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0C16575C1E9D826300C152C5 /* DraughtsMoveTests.swift */,
-				0C07C2CF1E525E0F00A921A8 /* Info.plist */,
+				0CF325631EB32B4D00F834D7 /* PGNParserTests */,
 			);
-			path = PGNParserTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		0C07C2DA1E5260F200A921A8 /* Products */ = {
@@ -212,6 +302,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0C3F622A1EB273ED00D8BB32 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				0C1DAFA81EB906CC001E1AE1 /* PGNParser.podspec */,
+				0C1DAFA71EB906CC001E1AE1 /* Package.swift */,
+				0C1DAFA61EB906CC001E1AE1 /* LICENSE */,
+				0C1DAFA91EB906CC001E1AE1 /* README.md */,
+				0C24F6A01EB9C5ED00D8CD01 /* CHANGELOG.md */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
+		0C3F622D1EB274E000D8BB32 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C1657361E9D655300C152C5 /* DraughtsMove.swift */,
+				0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		0CC5764A1E55064C0045BF4A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +337,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0CF325631EB32B4D00F834D7 /* PGNParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CF325651EB32B8400F834D7 /* Info.plist */,
+				0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */,
+			);
+			path = PGNParserTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -237,12 +357,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C3F61BB1EB2715700D8BB32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF325701EB32BAB00F834D7 /* PGNParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61E51EB2716F00D8BB32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF325711EB32BAB00F834D7 /* PGNParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F62011EB2717F00D8BB32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF325721EB32BAC00F834D7 /* PGNParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C07C2BE1E525E0F00A921A8 /* PGNParser */ = {
+		0C07C2BE1E525E0F00A921A8 /* PGNParser-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C07C2D31E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParser" */;
+			buildConfigurationList = 0C07C2D31E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParser-iOS" */;
 			buildPhases = (
 				0C07C2BA1E525E0F00A921A8 /* Sources */,
 				0C07C2BB1E525E0F00A921A8 /* Frameworks */,
@@ -254,14 +398,14 @@
 			);
 			dependencies = (
 			);
-			name = PGNParser;
+			name = "PGNParser-iOS";
 			productName = PGNParser;
 			productReference = 0C07C2BF1E525E0F00A921A8 /* PGNParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0C07C2C71E525E0F00A921A8 /* PGNParserTests */ = {
+		0C07C2C71E525E0F00A921A8 /* PGNParserTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C07C2D61E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParserTests" */;
+			buildConfigurationList = 0C07C2D61E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParserTests-iOS" */;
 			buildPhases = (
 				0C07C2C41E525E0F00A921A8 /* Sources */,
 				0C07C2C51E525E0F00A921A8 /* Frameworks */,
@@ -272,9 +416,99 @@
 			dependencies = (
 				0C07C2CB1E525E0F00A921A8 /* PBXTargetDependency */,
 			);
-			name = PGNParserTests;
+			name = "PGNParserTests-iOS";
 			productName = PGNParserTests;
-			productReference = 0C07C2C81E525E0F00A921A8 /* PGNParserTests.xctest */;
+			productReference = 0C07C2C81E525E0F00A921A8 /* PGNParserTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C3F61BD1EB2715700D8BB32 /* PGNParser-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3F61E11EB2715700D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-macOS" */;
+			buildPhases = (
+				0C3F61B91EB2715700D8BB32 /* Sources */,
+				0C3F61BA1EB2715700D8BB32 /* Frameworks */,
+				0C3F61BB1EB2715700D8BB32 /* Headers */,
+				0C3F61BC1EB2715700D8BB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PGNParser-macOS";
+			productName = "PGNParser-macOS";
+			productReference = 0C3F61BE1EB2715700D8BB32 /* PGNParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C3F61C51EB2715700D8BB32 /* PGNParserTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3F61E21EB2715700D8BB32 /* Build configuration list for PBXNativeTarget "PGNParserTests-macOS" */;
+			buildPhases = (
+				0C3F61C21EB2715700D8BB32 /* Sources */,
+				0C3F61C31EB2715700D8BB32 /* Frameworks */,
+				0C3F61C41EB2715700D8BB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C3F61C91EB2715700D8BB32 /* PBXTargetDependency */,
+			);
+			name = "PGNParserTests-macOS";
+			productName = "PGNParser-macOSTests";
+			productReference = 0C3F61C61EB2715700D8BB32 /* PGNParserTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C3F61E71EB2716F00D8BB32 /* PGNParser-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3F61F91EB2716F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-watchOS" */;
+			buildPhases = (
+				0C3F61E31EB2716F00D8BB32 /* Sources */,
+				0C3F61E41EB2716F00D8BB32 /* Frameworks */,
+				0C3F61E51EB2716F00D8BB32 /* Headers */,
+				0C3F61E61EB2716F00D8BB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PGNParser-watchOS";
+			productName = "PGNParser-watchOS";
+			productReference = 0C3F61E81EB2716F00D8BB32 /* PGNParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C3F62031EB2717F00D8BB32 /* PGNParser-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3F62151EB2717F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-tvOS" */;
+			buildPhases = (
+				0C3F61FF1EB2717F00D8BB32 /* Sources */,
+				0C3F62001EB2717F00D8BB32 /* Frameworks */,
+				0C3F62011EB2717F00D8BB32 /* Headers */,
+				0C3F62021EB2717F00D8BB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PGNParser-tvOS";
+			productName = "PGNParser-tvOS";
+			productReference = 0C3F62041EB2717F00D8BB32 /* PGNParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C3F620B1EB2717F00D8BB32 /* PGNParserTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3F62181EB2717F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParserTests-tvOS" */;
+			buildPhases = (
+				0C3F62081EB2717F00D8BB32 /* Sources */,
+				0C3F62091EB2717F00D8BB32 /* Frameworks */,
+				0C3F620A1EB2717F00D8BB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C3F620F1EB2717F00D8BB32 /* PBXTargetDependency */,
+			);
+			name = "PGNParserTests-tvOS";
+			productName = "PGNParser-tvOSTests";
+			productReference = 0C3F620C1EB2717F00D8BB32 /* PGNParserTests-tvOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -283,7 +517,7 @@
 		0C07C2B61E525E0E00A921A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Tigerpixel Ltd";
 				TargetAttributes = {
@@ -295,6 +529,30 @@
 					};
 					0C07C2C71E525E0F00A921A8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X9VLH29SKZ;
+						ProvisioningStyle = Automatic;
+					};
+					0C3F61BD1EB2715700D8BB32 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+					};
+					0C3F61C51EB2715700D8BB32 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X9VLH29SKZ;
+						ProvisioningStyle = Automatic;
+					};
+					0C3F61E71EB2716F00D8BB32 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X9VLH29SKZ;
+						ProvisioningStyle = Automatic;
+					};
+					0C3F62031EB2717F00D8BB32 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X9VLH29SKZ;
+						ProvisioningStyle = Automatic;
+					};
+					0C3F620B1EB2717F00D8BB32 = {
+						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X9VLH29SKZ;
 						ProvisioningStyle = Automatic;
 					};
@@ -322,8 +580,13 @@
 			);
 			projectRoot = "";
 			targets = (
-				0C07C2BE1E525E0F00A921A8 /* PGNParser */,
-				0C07C2C71E525E0F00A921A8 /* PGNParserTests */,
+				0C07C2BE1E525E0F00A921A8 /* PGNParser-iOS */,
+				0C3F61BD1EB2715700D8BB32 /* PGNParser-macOS */,
+				0C3F61E71EB2716F00D8BB32 /* PGNParser-watchOS */,
+				0C3F62031EB2717F00D8BB32 /* PGNParser-tvOS */,
+				0C07C2C71E525E0F00A921A8 /* PGNParserTests-iOS */,
+				0C3F61C51EB2715700D8BB32 /* PGNParserTests-macOS */,
+				0C3F620B1EB2717F00D8BB32 /* PGNParserTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -444,6 +707,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C3F61BC1EB2715700D8BB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61C41EB2715700D8BB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61E61EB2716F00D8BB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F62021EB2717F00D8BB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F620A1EB2717F00D8BB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -467,8 +765,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */,
 				0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */,
+				0C16575B1E9D657600C152C5 /* DraughtsNotationParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +774,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C16575D1E9D826300C152C5 /* DraughtsMoveTests.swift in Sources */,
+				0CF325681EB32B9A00F834D7 /* DraughtsMoveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61B91EB2715700D8BB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F621B1EB272BA00D8BB32 /* DraughtsMove.swift in Sources */,
+				0C3F621C1EB272BA00D8BB32 /* DraughtsNotationParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61C21EB2715700D8BB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF325691EB32B9B00F834D7 /* DraughtsMoveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61E31EB2716F00D8BB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F621D1EB272CD00D8BB32 /* DraughtsMove.swift in Sources */,
+				0C3F621E1EB272CD00D8BB32 /* DraughtsNotationParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F61FF1EB2717F00D8BB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3F621F1EB272D300D8BB32 /* DraughtsMove.swift in Sources */,
+				0C3F62201EB272D300D8BB32 /* DraughtsNotationParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3F62081EB2717F00D8BB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF3256B1EB32B9D00F834D7 /* DraughtsMoveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,8 +826,18 @@
 /* Begin PBXTargetDependency section */
 		0C07C2CB1E525E0F00A921A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C07C2BE1E525E0F00A921A8 /* PGNParser */;
+			target = 0C07C2BE1E525E0F00A921A8 /* PGNParser-iOS */;
 			targetProxy = 0C07C2CA1E525E0F00A921A8 /* PBXContainerItemProxy */;
+		};
+		0C3F61C91EB2715700D8BB32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C3F61BD1EB2715700D8BB32 /* PGNParser-macOS */;
+			targetProxy = 0C3F61C81EB2715700D8BB32 /* PBXContainerItemProxy */;
+		};
+		0C3F620F1EB2717F00D8BB32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C3F62031EB2717F00D8BB32 /* PGNParser-tvOS */;
+			targetProxy = 0C3F620E1EB2717F00D8BB32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,7 +863,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -532,7 +883,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +918,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -579,7 +932,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -593,6 +948,7 @@
 		0C07C2D41E525E0F00A921A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -602,10 +958,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PGNParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PGNParser;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -615,6 +971,7 @@
 		0C07C2D51E525E0F00A921A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -624,10 +981,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PGNParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PGNParser;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -638,7 +995,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
-				INFOPLIST_FILE = PGNParserTests/Info.plist;
+				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,11 +1008,229 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
-				INFOPLIST_FILE = PGNParserTests/Info.plist;
+				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0C3F61CF1EB2715700D8BB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PGNParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
+				PRODUCT_NAME = PGNParser;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C3F61D01EB2715700D8BB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PGNParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
+				PRODUCT_NAME = PGNParser;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0C3F61D11EB2715700D8BB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C3F61D21EB2715700D8BB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0C3F61FA1EB2716F00D8BB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PGNParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
+				PRODUCT_NAME = PGNParser;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0C3F61FB1EB2716F00D8BB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PGNParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
+				PRODUCT_NAME = PGNParser;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0C3F62161EB2717F00D8BB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PGNParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
+				PRODUCT_NAME = PGNParser;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0C3F62171EB2717F00D8BB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PGNParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
+				PRODUCT_NAME = PGNParser;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		0C3F62191EB2717F00D8BB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		0C3F621A1EB2717F00D8BB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = Tests/PGNParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -671,7 +1246,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C07C2D31E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParser" */ = {
+		0C07C2D31E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParser-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C07C2D41E525E0F00A921A8 /* Debug */,
@@ -680,11 +1255,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C07C2D61E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParserTests" */ = {
+		0C07C2D61E525E0F00A921A8 /* Build configuration list for PBXNativeTarget "PGNParserTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C07C2D71E525E0F00A921A8 /* Debug */,
 				0C07C2D81E525E0F00A921A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3F61E11EB2715700D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3F61CF1EB2715700D8BB32 /* Debug */,
+				0C3F61D01EB2715700D8BB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3F61E21EB2715700D8BB32 /* Build configuration list for PBXNativeTarget "PGNParserTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3F61D11EB2715700D8BB32 /* Debug */,
+				0C3F61D21EB2715700D8BB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3F61F91EB2716F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3F61FA1EB2716F00D8BB32 /* Debug */,
+				0C3F61FB1EB2716F00D8BB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3F62151EB2717F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParser-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3F62161EB2717F00D8BB32 /* Debug */,
+				0C3F62171EB2717F00D8BB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3F62181EB2717F00D8BB32 /* Build configuration list for PBXNativeTarget "PGNParserTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3F62191EB2717F00D8BB32 /* Debug */,
+				0C3F621A1EB2717F00D8BB32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
