@@ -6,6 +6,7 @@ install:
 - ./install_swiftlint.sh
 
 script:
+- pod repo update
 - pod lib lint PGNParser.podspec
 - swiftlint
 
