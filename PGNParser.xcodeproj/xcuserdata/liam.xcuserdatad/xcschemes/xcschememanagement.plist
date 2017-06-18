@@ -9,17 +9,17 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>PGNParser-macOS.xcscheme</key>
+		<key>PGNParser-macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
-		<key>PGNParser-tvOS.xcscheme</key>
+		<key>PGNParser-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>PGNParser-watchOS.xcscheme</key>
+		<key>PGNParser-watchOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>10</integer>

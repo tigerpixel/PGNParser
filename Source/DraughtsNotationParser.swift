@@ -66,7 +66,7 @@ struct DraughtsNotationParser {
     private static let untilCloseCurlyBracket: Parser<String> = notCloseCurlyBracket.zeroOneOrMany.map { String($0) }
 
     /// A parser which will parse a comment between and open and close curly bracket, keeping only the comment.
-    private static let comment: Parser<String> = openCurlyBracket *> untilCloseCurlyBracket <* closeCurlyBracket
+    private static let comment: Parser<String> = openCurlyBracket *> (untilCloseCurlyBracket <* closeCurlyBracket)
 
     /// A Parser which will parse a comment with whitespace before it and if the comment exists, keep only the comment.
     private static let optionalCommentAfterWhitespace: Parser<String?> = whitespace.zeroOneOrMany *> comment.optional

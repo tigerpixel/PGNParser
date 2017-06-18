@@ -3,7 +3,7 @@ Changelog
 
 Version 0.1.0
 -------------
-*Released 2017-05-15*
+*Released 2017-06-15*
 
 * Initial beta release for Draughts game string parsing.
 * Setup the basic project structure with Swiftlint and TravisCI.

@@ -6,17 +6,16 @@
 //  Copyright © 2017 Tigerpixel Ltd. All rights reserved.
 //
 
-/// A Currier Package Description for use with the Swift Package Manager
+/// A PGNParser Package Description for use with the Swift Package Manager
 
 import PackageDescription
 
 let package = Package(
-    name: "PGNParser"
-    targets: [],
+    name: "PGNParser",
     dependencies: [
         .Package(url: "https://github.com/tigerpixel/Currier.git",
-                 majorVersion: 1),
+                  majorVersion: 1),
         .Package(url: "https://github.com/tigerpixel/ParserCombinator.git",
-                 majorVersion: 1),
+                 majorVersion: 1)
         ]
 )
