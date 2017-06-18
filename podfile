@@ -1,0 +1,22 @@
+
+def shared_pods
+pod 'Currier'
+pod 'ParserCombinator'
+end
+
+target 'PGNParser-iOS' do
+shared_pods
+end
+
+target 'PGNParser-macOS' do
+shared_pods
+end
+
+target 'PGNParser-watchOS' do
+shared_pods
+end
+
+target 'PGNParser-tvOS' do
+shared_pods
+end
+
