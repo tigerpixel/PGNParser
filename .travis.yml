@@ -10,8 +10,8 @@ script:
 - pod lib lint PGNParser.podspec
 - swiftlint
 
-- xcodebuild test -project PGNParser.xcodeproj -scheme PGNParser-iOS -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7'
-- xcodebuild test -project PGNParser.xcodeproj -scheme PGNParser-macOS -destination 'platform=OS X,arch=x86_64'
-- xcodebuild test -project PGNParser.xcodeproj -scheme PGNParser-tvOS -destination 'platform=tvOS Simulator,name=Apple TV 1080p'
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-iOS -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7'
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-macOS -destination 'platform=OS X,arch=x86_64'
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-tvOS -destination 'platform=tvOS Simulator,name=Apple TV 1080p'
 
-- xcodebuild -project PGNParser.xcodeproj -scheme PGNParser-watchOS
+- xcodebuild -workspace PGNParser.xcworkspace -scheme PGNParser-watchOS
