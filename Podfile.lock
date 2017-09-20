@@ -1,0 +1,15 @@
+PODS:
+  - Currier (0.3.0)
+  - ParserCombinator (0.2.0)
+
+DEPENDENCIES:
+  - Currier
+  - ParserCombinator
+
+SPEC CHECKSUMS:
+  Currier: 3a6d97c4b160ba29fca100efb0f9ae57e5ccad4c
+  ParserCombinator: d89056aa79d782df0b9e255ede6c36e897f852be
+
+PODFILE CHECKSUM: 752c88f8c29aae8e024fe8d9672533814561a0b4
+
+COCOAPODS: 1.2.1
