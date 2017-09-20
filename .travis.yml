@@ -1,0 +1,21 @@
+osx_image: xcode8.3
+language: objective-c
+
+before_install:
+
+- gem install cocoapods # Since Travis is not always on latest version
+- pod install
+
+install:
+- ./install_swiftlint.sh
+
+script:
+- pod lib lint PGNParser.podspec
+
+- swiftlint
+
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-iOS -destination 'platform=iOS Simulator,OS=latest,name=iPhone 7'
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-macOS -destination 'platform=macOS,arch=x86_64'
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-tvOS -destination 'platform=tvOS Simulator,name=Apple TV 1080p'
+
+- xcodebuild -workspace PGNParser.xcworkspace -scheme PGNParser-watchOS

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C07C2BE1E525E0F00A921A8"
+               BlueprintIdentifier = "0C3F61E71EB2716F00D8BB32"
                BuildableName = "PGNParser.framework"
-               BlueprintName = "PGNParser"
+               BlueprintName = "PGNParser-watchOS"
                ReferencedContainer = "container:PGNParser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C07C2C71E525E0F00A921A8"
-               BuildableName = "PGNParserTests.xctest"
-               BlueprintName = "PGNParserTests"
+               BlueprintIdentifier = "0C3F61EF1EB2716F00D8BB32"
+               BuildableName = "PGNParserTests-watchOS.xctest"
+               BlueprintName = "PGNParserTests-watchOS"
                ReferencedContainer = "container:PGNParser.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C07C2BE1E525E0F00A921A8"
+            BlueprintIdentifier = "0C3F61E71EB2716F00D8BB32"
             BuildableName = "PGNParser.framework"
-            BlueprintName = "PGNParser"
+            BlueprintName = "PGNParser-watchOS"
             ReferencedContainer = "container:PGNParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C07C2BE1E525E0F00A921A8"
+            BlueprintIdentifier = "0C3F61E71EB2716F00D8BB32"
             BuildableName = "PGNParser.framework"
-            BlueprintName = "PGNParser"
+            BlueprintName = "PGNParser-watchOS"
             ReferencedContainer = "container:PGNParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C07C2BE1E525E0F00A921A8"
+            BlueprintIdentifier = "0C3F61E71EB2716F00D8BB32"
             BuildableName = "PGNParser.framework"
-            BlueprintName = "PGNParser"
+            BlueprintName = "PGNParser-watchOS"
             ReferencedContainer = "container:PGNParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
