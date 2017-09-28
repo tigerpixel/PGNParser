@@ -35,8 +35,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -67,8 +67,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -96,8 +96,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -139,8 +139,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(lastMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -179,8 +179,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(lastMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -210,8 +210,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -240,8 +240,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -270,8 +270,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -288,11 +288,11 @@ class DraughtsMoveTests: XCTestCase {
             if let firstMove = moves.first {
                 XCTAssertEqual("This is a comment.", firstMove.comment)
             } else {
-                XCTFail()
+                XCTFail("The first move should be present")
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -311,7 +311,7 @@ class DraughtsMoveTests: XCTestCase {
             if let firstMove = moves.first {
                 XCTAssertEqual("This is a comment.", firstMove.comment)
             } else {
-                XCTFail()
+                XCTFail("There are no recorded moves")
             }
 
             if let lastMove = moves.last {
@@ -327,11 +327,11 @@ class DraughtsMoveTests: XCTestCase {
 
                 XCTAssertEqual("This is another comment.", lastMove.comment)
             } else {
-                XCTFail()
+                XCTFail("There are no recorded moves")
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
@@ -364,7 +364,7 @@ class DraughtsMoveTests: XCTestCase {
 
                 XCTAssertNil(firstMove.comment)
             } else {
-                XCTFail()
+                XCTFail("There are no recorded moves")
             }
 
             let moveWithCapture = moves[5]
@@ -388,25 +388,25 @@ class DraughtsMoveTests: XCTestCase {
 
                 XCTAssertNil(lastMove.black)
             } else {
-                XCTFail()
+                XCTFail("There are no recorded moves")
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
     func testNoMoves() {
 
         switch DraughtsMove.parse(fromPortableGameNotation:"") {
-        case .success(_, _):
-            XCTFail()
+        case .success:
+            XCTFail("The parser should fail")
 
         case .failure(let reason):
             if case .insufficiantTokens = reason {
                 return
             }
-            XCTFail()
+            XCTFail("The parser failed for a reason other than having insufficiant tokens")
         }
     }
 
@@ -422,11 +422,11 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertEqual("n", String(token))
                 XCTAssertEqual(" jkfuf ufjf jnkf  j1j2 8485ui5j 4", String(tail))
             } else {
-                XCTFail()
+                XCTFail("The parser failed for a reason other than receiving an unexpected token")
             }
 
-        case .success(_, _):
-            XCTFail()
+        case .success:
+            XCTFail("The parser should fail")
         }
     }
 
@@ -457,8 +457,8 @@ class DraughtsMoveTests: XCTestCase {
                 XCTAssertNil(firstMove.comment)
             }
 
-        case .failure(_):
-            XCTFail()
+        case .failure:
+            XCTFail("The parser should succeed")
         }
     }
 
