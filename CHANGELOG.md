@@ -9,6 +9,8 @@
 * Give the project targets for iOS, Mac, tvOS and watchOS.
 * Make the project available to Cocoapods, Carthage and the SPM.
 
+## Version 0.2.0
+
 ### *Released 2017-10-01*
 
 * Swift 4 and Xcode 9 updates.
