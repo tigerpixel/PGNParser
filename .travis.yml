@@ -1,9 +1,10 @@
-osx_image: xcode8.3
+osx_image: xcode9
 language: objective-c
 
 before_install:
 
 - gem install cocoapods # Since Travis is not always on latest version
+- pod repo update
 - pod install
 
 install:
