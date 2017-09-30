@@ -6,7 +6,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PGNParser'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A simple way to parse Portable Game Notation into Swift objects.'
   s.description      = <<-DESC
 A simple way to parse Portable Game Notation into Swift objects. Easily parse game strings into Swift objects with just a single call. More work is required to fully suppourt the format. Pull requests for improvements are welcome.
