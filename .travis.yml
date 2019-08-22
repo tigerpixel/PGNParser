@@ -1,4 +1,4 @@
-osx_image: xcode9
+osx_image: xcode10.3
 language: objective-c
 
 before_install:
@@ -15,8 +15,7 @@ script:
 
 - swiftlint
 
-- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-iOS -destination 'platform=iOS Simulator,OS=latest,name=iPhone 7'
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-iOS -destination 'platform=iOS Simulator,OS=latest,name=iPhone 8'
 - xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-macOS -destination 'platform=macOS,arch=x86_64'
-- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-tvOS -destination 'platform=tvOS Simulator,name=Apple TV 1080p'
-
+- xcodebuild test -workspace PGNParser.xcworkspace -scheme PGNParser-tvOS -destination 'platform=tvOS Simulator,OS=latest,name=Apple TV 4K'
 - xcodebuild -workspace PGNParser.xcworkspace -scheme PGNParser-watchOS

@@ -38,8 +38,8 @@ There are 2 external requirements for this project. Both by Tigerpixel, the same
 [ParserCombinator](https://github.com/tigerpixel/ParserCombinator.git) - A General parser combinator which is extended to build PGNParser.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 9.0+
-- Swift 4.0+
+- Xcode 10.3+
+- Swift 5.0+
 
 ## Installation
 

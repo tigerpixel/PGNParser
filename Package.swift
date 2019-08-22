@@ -1,4 +1,4 @@
-//
+// swift-tools-version:4.0
 //  Package.swift
 //  PGNParser
 //
@@ -12,10 +12,15 @@ import PackageDescription
 
 let package = Package(
     name: "PGNParser",
+    products: [
+        .library(name: "PGNParser", targets: ["PGNParser"])
+    ],
     dependencies: [
-        .Package(url: "https://github.com/tigerpixel/Currier.git",
-                  majorVersion: 1),
-        .Package(url: "https://github.com/tigerpixel/ParserCombinator.git",
-                 majorVersion: 1)
-        ]
+        .package(url: "https://github.com/tigerpixel/Currier.git", from: "1.2.1"),
+        .package(url: "https://github.com/tigerpixel/ParserCombinator.git", from: "2.0.1")
+        ],
+    targets: [
+        .target(name: "PGNParser", dependencies: ["Currier", "ParserCombinator"]),
+        .testTarget(name: "PGNParserTests", dependencies: ["PGNParser"])
+    ]
 )

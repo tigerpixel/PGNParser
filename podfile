@@ -1,13 +1,11 @@
 
-use_frameworks!
-
 def shared_pods
     pod 'Currier'
     pod 'ParserCombinator'
 end
 
 target 'PGNParser-iOS' do
-    
+  
     platform :ios, '8.0'
     shared_pods
 
