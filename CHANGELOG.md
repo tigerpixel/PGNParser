@@ -17,3 +17,11 @@
 * Swiftlint version update to 0.22.0
 * Add failure messages to all XCFail test cases.
 * Neaten markdown files.
+
+## Version 0.3.0
+
+### *Released 2019-8-20*
+
+* Swift 5 and Xcode 10.3 updates.
+* Swiftlint version update to 0.34.0
+* Update to Swift Package Manager to make compatible with Swift 5.
