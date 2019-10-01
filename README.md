@@ -10,13 +10,13 @@ PGNParser is designed to parse [Portable Game Notation](https://en.wikipedia.org
 
 Currently, only the draughts game strings have been implemented. Pull requests are welcome for further features.
 
-Parsing can be enacted by simply making a single call on the draughts move objects.
+Parsing can be enacted by simply making a single 'parse' call on the draughts move object.
 
 A result type will be returned which will contain the resulting move array or details of any failure.
 
 A failure contains an enumeration describing the reason for the failure and usually the token which failed.
 
-The following will parse to on DraughtsMove structure containing a black and a white move.
+The following will parse a PGN string to a DraughtsMove structure containing a black and a white move.
 
 ```swift
 let sinlgeMoveTwoPlayers = "1. 9-14 23-18"
