@@ -10,13 +10,13 @@ PGNParser is designed to parse [Portable Game Notation](https://en.wikipedia.org
 
 Currently, only the draughts game strings have been implemented. Pull requests are welcome for further features.
 
-Parsing can be enacted by simply making a single 'parse' call on the draughts move object.
+Parsing can be enacted by simply making a single 'parse' call on the draughts move struct.
 
 A result type will be returned which will contain the resulting move array or details of any failure.
 
 A failure contains an enumeration describing the reason for the failure and usually the token which failed.
 
-The following will parse a PGN string to a DraughtsMove structure containing a black and a white move.
+The following PGN string will parse to a DraughtsMove structure containing a black and a white move.
 
 ```swift
 let sinlgeMoveTwoPlayers = "1. 9-14 23-18"
@@ -35,6 +35,7 @@ case .failure(let reason):
 There are 2 external requirements for this project. Both by Tigerpixel, the same authors.
 
 [Currier](https://github.com/tigerpixel/Currier.git) - A helper for currying functions and initializers which is used with the project.
+
 [ParserCombinator](https://github.com/tigerpixel/ParserCombinator.git) - A General parser combinator which is extended to build PGNParser.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
