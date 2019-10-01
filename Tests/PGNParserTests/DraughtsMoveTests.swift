@@ -398,7 +398,7 @@ class DraughtsMoveTests: XCTestCase {
 
     func testNoMoves() {
 
-        switch DraughtsMove.parse(fromPortableGameNotation:"") {
+        switch DraughtsMove.parse(fromPortableGameNotation: "") {
         case .success:
             XCTFail("The parser should fail")
 

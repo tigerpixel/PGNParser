@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082A6C17F7A20627F24DB5EA /* libPods-PGNParserTests-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0298290F6E453B252ADFD6BE /* libPods-PGNParserTests-iOS.a */; };
 		0C07C2C91E525E0F00A921A8 /* PGNParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07C2BF1E525E0F00A921A8 /* PGNParser.framework */; };
 		0C07C2D01E525E0F00A921A8 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C1657371E9D655300C152C5 /* DraughtsMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1657361E9D655300C152C5 /* DraughtsMove.swift */; };
@@ -25,13 +26,12 @@
 		0CF325701EB32BAB00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CF325711EB32BAB00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CF325721EB32BAC00F834D7 /* PGNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C07C2C21E525E0F00A921A8 /* PGNParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10482BF535E2B3B8AA8B2303 /* Pods_PGNParser_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABD80223957C4BD0A592E29 /* Pods_PGNParser_tvOS.framework */; };
-		4F3260D0D35E207DDBDE01CD /* Pods_PGNParserTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A4D8AA10611AC726DC772 /* Pods_PGNParserTests_iOS.framework */; };
-		54359B48400683E2235FC9B6 /* Pods_PGNParserTests_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6CEC7F140A361078875503 /* Pods_PGNParserTests_tvOS.framework */; };
-		CD5F9981D203B0C9A84E7767 /* Pods_PGNParser_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742717F481CFC56B843ACD7C /* Pods_PGNParser_watchOS.framework */; };
-		E1B7150A7B08F4457EBCC7B0 /* Pods_PGNParserTests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFB1CEE53323D429A9368D6 /* Pods_PGNParserTests_macOS.framework */; };
-		E477507C1BBB79EE8E8DED45 /* Pods_PGNParser_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8739F524254F80E4E4F6834 /* Pods_PGNParser_iOS.framework */; };
-		EC1156FE9C1611BE6876B3AC /* Pods_PGNParser_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007E2CF0CAF0EEBD170C3E48 /* Pods_PGNParser_macOS.framework */; };
+		5B9D37C069A9B100DC32039F /* libPods-PGNParserTests-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EABEA0CB8D43286ACC578F41 /* libPods-PGNParserTests-macOS.a */; };
+		5F537694A33358B8E7343B54 /* libPods-PGNParser-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D58963FF9523C60914C8A544 /* libPods-PGNParser-tvOS.a */; };
+		986885AD27C1FC8CEB49A7C3 /* libPods-PGNParser-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A28C54AE7A153C04CCF147 /* libPods-PGNParser-macOS.a */; };
+		9C707230865660A0C6B1E175 /* libPods-PGNParser-watchOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411D2DC75A46EB2EE01A5A7 /* libPods-PGNParser-watchOS.a */; };
+		D32FCCD412ED415BCAB5C27C /* libPods-PGNParser-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9003A39A0F0117597E2651 /* libPods-PGNParser-iOS.a */; };
+		D75BC2358507B3D2DCA0F054 /* libPods-PGNParserTests-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB99299AFEE5053F6DF76E0 /* libPods-PGNParserTests-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007E2CF0CAF0EEBD170C3E48 /* Pods_PGNParser_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParser_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0298290F6E453B252ADFD6BE /* libPods-PGNParserTests-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParserTests-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C07C2BF1E525E0F00A921A8 /* PGNParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGNParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C07C2C21E525E0F00A921A8 /* PGNParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGNParser.h; sourceTree = "<group>"; };
 		0C07C2C31E525E0F00A921A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,26 +78,26 @@
 		0C3F620C1EB2717F00D8BB32 /* PGNParserTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PGNParserTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF325641EB32B8400F834D7 /* DraughtsMoveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraughtsMoveTests.swift; sourceTree = "<group>"; };
 		0CF325651EB32B8400F834D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A28C54AE7A153C04CCF147 /* libPods-PGNParser-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParser-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411D2DC75A46EB2EE01A5A7 /* libPods-PGNParser-watchOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParser-watchOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B0EF2A94E1C58AB8C5F928 /* Pods-PGNParser-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-iOS/Pods-PGNParser-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1BB99299AFEE5053F6DF76E0 /* libPods-PGNParserTests-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParserTests-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3937B430FB41C26DBDD34B7E /* Pods-PGNParser-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-tvOS/Pods-PGNParser-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4F9003A39A0F0117597E2651 /* libPods-PGNParser-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParser-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8D580F60989227A31009B7 /* Pods-PGNParser-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-iOS/Pods-PGNParser-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6E840DF1ABD11302D6205B4F /* Pods-PGNParserTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParserTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParserTests-iOS/Pods-PGNParserTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6F5FA1C8EBCF23CDA9A04364 /* Pods-PGNParser-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-watchOS/Pods-PGNParser-watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		742717F481CFC56B843ACD7C /* Pods_PGNParser_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParser_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CF9A16103AEA40BF2B4300 /* Pods-PGNParserTests-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParserTests-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParserTests-macOS/Pods-PGNParserTests-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7D583E7606AFA525FB330ABE /* Pods-PGNParserTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParserTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParserTests-iOS/Pods-PGNParserTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		8ABD80223957C4BD0A592E29 /* Pods_PGNParser_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParser_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EFB1CEE53323D429A9368D6 /* Pods_PGNParserTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParserTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E731E6AB15FBE7984F2480 /* Pods-PGNParser-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-tvOS/Pods-PGNParser-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		9C6CEC7F140A361078875503 /* Pods_PGNParserTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParserTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD69AF960C340BA110C711DE /* Pods-PGNParser-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-watchOS/Pods-PGNParser-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C8739F524254F80E4E4F6834 /* Pods_PGNParser_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParser_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD72D8EC63CF29241486E20 /* Pods-PGNParserTests-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParserTests-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParserTests-macOS/Pods-PGNParserTests-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		D038D792ED9AF2405744BA40 /* Pods-PGNParser-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-macOS/Pods-PGNParser-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D26F8B437C9D44B41A0CE902 /* Pods-PGNParserTests-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParserTests-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParserTests-tvOS/Pods-PGNParserTests-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D58963FF9523C60914C8A544 /* libPods-PGNParser-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParser-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EA5062F5B83C9DF2A894C5 /* Pods-PGNParserTests-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParserTests-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParserTests-tvOS/Pods-PGNParserTests-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		EABEA0CB8D43286ACC578F41 /* libPods-PGNParserTests-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGNParserTests-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD830B00276E43D450E8E59 /* Pods-PGNParser-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGNParser-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGNParser-macOS/Pods-PGNParser-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		F68A4D8AA10611AC726DC772 /* Pods_PGNParserTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PGNParserTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E477507C1BBB79EE8E8DED45 /* Pods_PGNParser_iOS.framework in Frameworks */,
+				D32FCCD412ED415BCAB5C27C /* libPods-PGNParser-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C07C2C91E525E0F00A921A8 /* PGNParser.framework in Frameworks */,
-				4F3260D0D35E207DDBDE01CD /* Pods_PGNParserTests_iOS.framework in Frameworks */,
+				082A6C17F7A20627F24DB5EA /* libPods-PGNParserTests-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1156FE9C1611BE6876B3AC /* Pods_PGNParser_macOS.framework in Frameworks */,
+				986885AD27C1FC8CEB49A7C3 /* libPods-PGNParser-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C3F61C71EB2715700D8BB32 /* PGNParser.framework in Frameworks */,
-				E1B7150A7B08F4457EBCC7B0 /* Pods_PGNParserTests_macOS.framework in Frameworks */,
+				5B9D37C069A9B100DC32039F /* libPods-PGNParserTests-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5F9981D203B0C9A84E7767 /* Pods_PGNParser_watchOS.framework in Frameworks */,
+				9C707230865660A0C6B1E175 /* libPods-PGNParser-watchOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10482BF535E2B3B8AA8B2303 /* Pods_PGNParser_tvOS.framework in Frameworks */,
+				5F537694A33358B8E7343B54 /* libPods-PGNParser-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C3F620D1EB2717F00D8BB32 /* PGNParser.framework in Frameworks */,
-				54359B48400683E2235FC9B6 /* Pods_PGNParserTests_tvOS.framework in Frameworks */,
+				D75BC2358507B3D2DCA0F054 /* libPods-PGNParserTests-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +168,7 @@
 			children = (
 				0C3F622A1EB273ED00D8BB32 /* Docs */,
 				0C07C2C11E525E0F00A921A8 /* PGNParser */,
-				0C3F622D1EB274E000D8BB32 /* Source */,
+				0C3F622D1EB274E000D8BB32 /* Sources */,
 				0C07C2CC1E525E0F00A921A8 /* Tests */,
 				0C07C2C01E525E0F00A921A8 /* Products */,
 				BC080BB0BCA3C1397B55AC3A /* Pods */,
@@ -219,13 +219,21 @@
 			name = Docs;
 			sourceTree = "<group>";
 		};
-		0C3F622D1EB274E000D8BB32 /* Source */ = {
+		0C3F622D1EB274E000D8BB32 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0CBE434A230CADD30031544B /* PGNParser */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0CBE434A230CADD30031544B /* PGNParser */ = {
 			isa = PBXGroup;
 			children = (
 				0C1657361E9D655300C152C5 /* DraughtsMove.swift */,
 				0C16575A1E9D657600C152C5 /* DraughtsNotationParser.swift */,
 			);
-			path = Source;
+			path = PGNParser;
 			sourceTree = "<group>";
 		};
 		0CF325631EB32B4D00F834D7 /* PGNParserTests */ = {
@@ -240,13 +248,13 @@
 		6F1B5943F1E3D04B465BC80B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8739F524254F80E4E4F6834 /* Pods_PGNParser_iOS.framework */,
-				007E2CF0CAF0EEBD170C3E48 /* Pods_PGNParser_macOS.framework */,
-				8ABD80223957C4BD0A592E29 /* Pods_PGNParser_tvOS.framework */,
-				742717F481CFC56B843ACD7C /* Pods_PGNParser_watchOS.framework */,
-				F68A4D8AA10611AC726DC772 /* Pods_PGNParserTests_iOS.framework */,
-				8EFB1CEE53323D429A9368D6 /* Pods_PGNParserTests_macOS.framework */,
-				9C6CEC7F140A361078875503 /* Pods_PGNParserTests_tvOS.framework */,
+				4F9003A39A0F0117597E2651 /* libPods-PGNParser-iOS.a */,
+				13A28C54AE7A153C04CCF147 /* libPods-PGNParser-macOS.a */,
+				D58963FF9523C60914C8A544 /* libPods-PGNParser-tvOS.a */,
+				1411D2DC75A46EB2EE01A5A7 /* libPods-PGNParser-watchOS.a */,
+				0298290F6E453B252ADFD6BE /* libPods-PGNParserTests-iOS.a */,
+				EABEA0CB8D43286ACC578F41 /* libPods-PGNParserTests-macOS.a */,
+				1BB99299AFEE5053F6DF76E0 /* libPods-PGNParserTests-tvOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,7 +328,6 @@
 				0C07C2BC1E525E0F00A921A8 /* Headers */,
 				0C07C2BD1E525E0F00A921A8 /* Resources */,
 				0C654BEB1EA8A35200E00A6D /* ShellScript */,
-				12161661C6573A08EEC67E62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,8 +346,6 @@
 				0C07C2C41E525E0F00A921A8 /* Sources */,
 				0C07C2C51E525E0F00A921A8 /* Frameworks */,
 				0C07C2C61E525E0F00A921A8 /* Resources */,
-				64C7D9E2FC7A5B6B9510BD91 /* [CP] Embed Pods Frameworks */,
-				D8EB63CF208B6EA39437EAEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,7 +366,6 @@
 				0C3F61BA1EB2715700D8BB32 /* Frameworks */,
 				0C3F61BB1EB2715700D8BB32 /* Headers */,
 				0C3F61BC1EB2715700D8BB32 /* Resources */,
-				01BF9D97DC25A53FBDBBDC55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,8 +384,6 @@
 				0C3F61C21EB2715700D8BB32 /* Sources */,
 				0C3F61C31EB2715700D8BB32 /* Frameworks */,
 				0C3F61C41EB2715700D8BB32 /* Resources */,
-				6B1B1C0B5812B10D1AF72F51 /* [CP] Embed Pods Frameworks */,
-				9E6C111DD7E7B89F62314F14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,7 +404,6 @@
 				0C3F61E41EB2716F00D8BB32 /* Frameworks */,
 				0C3F61E51EB2716F00D8BB32 /* Headers */,
 				0C3F61E61EB2716F00D8BB32 /* Resources */,
-				E51FF73408885AAC844F6AFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,7 +423,6 @@
 				0C3F62001EB2717F00D8BB32 /* Frameworks */,
 				0C3F62011EB2717F00D8BB32 /* Headers */,
 				0C3F62021EB2717F00D8BB32 /* Resources */,
-				261BF5C0BA0EEE76340E6FF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,8 +441,6 @@
 				0C3F62081EB2717F00D8BB32 /* Sources */,
 				0C3F62091EB2717F00D8BB32 /* Frameworks */,
 				0C3F620A1EB2717F00D8BB32 /* Resources */,
-				023D086B8BB61A026258F515 /* [CP] Embed Pods Frameworks */,
-				431C47E590CCF0351C87BEAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -461,58 +459,59 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Tigerpixel Ltd";
 				TargetAttributes = {
 					0C07C2BE1E525E0F00A921A8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9VLH29SKZ;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					0C07C2C71E525E0F00A921A8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9VLH29SKZ;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					0C3F61BD1EB2715700D8BB32 = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
 					};
 					0C3F61C51EB2715700D8BB32 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X9VLH29SKZ;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					0C3F61E71EB2716F00D8BB32 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X9VLH29SKZ;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					0C3F62031EB2717F00D8BB32 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X9VLH29SKZ;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					0C3F620B1EB2717F00D8BB32 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X9VLH29SKZ;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 0C07C2B91E525E0E00A921A8 /* Build configuration list for PBXProject "PGNParser" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0C07C2B51E525E0E00A921A8;
 			productRefGroup = 0C07C2C01E525E0F00A921A8 /* Products */;
@@ -583,41 +582,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01BF9D97DC25A53FBDBBDC55 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParser-macOS/Pods-PGNParser-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		023D086B8BB61A026258F515 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-tvOS/Pods-PGNParserTests-tvOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Currier-tvOS/Currier.framework",
-				"${BUILT_PRODUCTS_DIR}/ParserCombinator-tvOS/ParserCombinator.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Currier.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParserCombinator.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-tvOS/Pods-PGNParserTests-tvOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0C654BEB1EA8A35200E00A6D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,7 +593,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		1190BBDFA00E80E74FF7C41E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -647,36 +611,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		12161661C6573A08EEC67E62 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParser-iOS/Pods-PGNParser-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		261BF5C0BA0EEE76340E6FF3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParser-tvOS/Pods-PGNParser-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3322B084650B8874B6565F6E /* [CP] Check Pods Manifest.lock */ = {
@@ -733,21 +667,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		431C47E590CCF0351C87BEAA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-tvOS/Pods-PGNParserTests-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5C6B1B754F17F86C1E795E11 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -766,61 +685,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		64C7D9E2FC7A5B6B9510BD91 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-iOS/Pods-PGNParserTests-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Currier-iOS/Currier.framework",
-				"${BUILT_PRODUCTS_DIR}/ParserCombinator-iOS/ParserCombinator.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Currier.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParserCombinator.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-iOS/Pods-PGNParserTests-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B1B1C0B5812B10D1AF72F51 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-macOS/Pods-PGNParserTests-macOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Currier-macOS/Currier.framework",
-				"${BUILT_PRODUCTS_DIR}/ParserCombinator-macOS/ParserCombinator.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Currier.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParserCombinator.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-macOS/Pods-PGNParserTests-macOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E6C111DD7E7B89F62314F14 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-macOS/Pods-PGNParserTests-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B4DEC9BDA246C4B5E30C7F32 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -837,36 +701,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8EB63CF208B6EA39437EAEF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParserTests-iOS/Pods-PGNParserTests-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E51FF73408885AAC844F6AFE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGNParser-watchOS/Pods-PGNParser-watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E81019BA5819D4AA9A95F641 /* [CP] Check Pods Manifest.lock */ = {
@@ -975,6 +809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -984,6 +819,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -991,6 +827,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1036,6 +873,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1045,6 +883,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1052,6 +891,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1102,12 +942,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
 				PRODUCT_NAME = PGNParser;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1127,11 +967,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParser;
 				PRODUCT_NAME = PGNParser;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1145,8 +985,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1160,8 +999,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.PGNParserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1188,8 +1026,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1216,8 +1053,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1236,8 +1072,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1256,8 +1091,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1280,9 +1114,8 @@
 				PRODUCT_NAME = PGNParser;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1307,9 +1140,8 @@
 				PRODUCT_NAME = PGNParser;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1334,8 +1166,7 @@
 				PRODUCT_NAME = PGNParser;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1360,8 +1191,7 @@
 				PRODUCT_NAME = PGNParser;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1379,8 +1209,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
@@ -1397,8 +1227,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.PGNParser-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;

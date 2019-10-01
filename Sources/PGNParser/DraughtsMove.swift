@@ -8,7 +8,7 @@
 
 import ParserCombinator
 
-/// The positions on the board conform to an interger number.
+/// The positions on the board conform to an integer number.
 typealias BoardPosition = Int
 
 /**
@@ -81,7 +81,7 @@ extension DraughtsMove {
      */
     public static func parse(fromPortableGameNotation notation: String) -> ParseResult<[DraughtsMove]> {
 
-        return DraughtsNotationParser.portableGameNotation().run(withInput: notation)
+        DraughtsNotationParser.portableGameNotation().run(withInput: notation)
     }
 
 }
