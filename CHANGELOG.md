@@ -25,3 +25,13 @@
 * Swift 5 and Xcode 10.3 updates.
 * Swiftlint version update to 0.34.0
 * Update to Swift Package Manager to make compatible with Swift 5.
+
+## Version 0.4.0
+
+### *Released 2019-9-31*
+
+* Swift 5.1 and Xcode 11 updates.
+* Added all Apple platforms to Swift Package Manager build.
+* Promoted Swift Package Manager in the README file.
+* Removed unnecessary return statements.
+* Swiftlint version update to 0.35.0
